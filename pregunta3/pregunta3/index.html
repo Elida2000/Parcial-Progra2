@@ -9,17 +9,24 @@
 </head>
 
 <body>
+    <button id="winner" onclick="getGanador()">Ganador</button>
+    <br><br>
+
     <label for="">Nombre partido: </label>
     <input type="text" id="name" name="name" placeholder="Nombre">
+    <hr>
     <label for="">Orientacion:</label>
     <select size="1" id="orientation" name="orientation">
         <option value="izq">Izquierda</option>
         <option value="centro">Centro</option>
         <option value="der">Derecha</option>
     </select>
+    <hr>
     <label for="">Cantidad votos: </label>
     <input type="text" id="quantity" name="quantity" placeholder="Cantidad">
+    <hr>
     <button id="send" onclick="sendData()">Enviar</button>
+    <hr><br>
 
     <table id="Data">
         <tr>
