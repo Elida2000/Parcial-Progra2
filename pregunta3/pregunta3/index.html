@@ -6,12 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Partidos</title>
-    <link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
+    <label for="">Nombre partido: </label>
+    <input type="text" id="name" name="name" placeholder="Nombre">
+    <label for="">Orientacion:</label>
+    <select size="1" id="orientation" name="orientation">
+        <option value="izq">Izquierda</option>
+        <option value="centro">Centro</option>
+        <option value="der">Derecha</option>
+    </select>
+    <label for="">Cantidad votos: </label>
+    <input type="text" id="quantity" name="quantity" placeholder="Cantidad">
+    <button id="send" onclick="sendData()">Enviar</button>
 
+    <table id="Data">
+        <tr>
+            <th>Nombre</th>
+            <th>Orientacion</th>
+            <th>Cantidad</th>
+            <th>Estado</th>
+        </tr>
+    </table>
     
-
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
