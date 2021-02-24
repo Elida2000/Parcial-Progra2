@@ -14,4 +14,6 @@ function sendData(){
     document.getElementById("Data").insertRow(-1).innerHTML = '<tr><td>'+name+'<tr><td>'+orientation+'<tr><td>'+quantity+'<tr><td>'+status+'<tr><td>'
 }
 
-function getGanador()
+function getGanador(){
+    
+}
